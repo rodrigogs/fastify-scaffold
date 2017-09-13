@@ -1,6 +1,12 @@
 # fastify-scaffold
 
-A [fastify](http://www.fastify.io/) app scaffold example.
+[![Build Status](https://travis-ci.org/rodrigogs/fastify-scaffold.svg?branch=master)](https://travis-ci.org/rodrigogs/fastify-scaffold)
+[![Code Climate](https://codeclimate.com/github/rodrigogs/fastify-scaffold/badges/gpa.svg)](https://codeclimate.com/github/rodrigogs/fastify-scaffold)
+[![Test Coverage](https://codeclimate.com/github/rodrigogs/fastify-scaffold/badges/coverage.svg)](https://codeclimate.com/github/rodrigogs/fastify-scaffold/coverage)
+[![Dependency Status](https://david-dm.org/rodrigogs/fastify-scaffold/status.svg)](https://david-dm.org/rodrigogs/fastify-scaffold#info=dependencies)
+[![devDependency Status](https://david-dm.org/rodrigogs/fastify-scaffold/dev-status.svg)](https://david-dm.org/rodrigogs/fastify-scaffold#info=devDependencies)
+
+A structured [fastify](http://www.fastify.io/) app example.
 
 #### Setup
 
