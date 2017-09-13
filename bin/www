@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const app = require('../src/app');
+
+app()
+  .then((instance) => {
+    console.log('Application running on port', instance.server.address().port);
+  })
+  .catch((err) => {
+    console.error('Application crached', err);
+  });
