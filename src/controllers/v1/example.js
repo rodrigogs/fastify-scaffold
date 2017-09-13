@@ -6,7 +6,7 @@ const ExampleController = {
    * @api {get} v1/example/ Example
    * @apiVersion 1.0.0
    * @apiName Example
-   * @apiGroup 
+   * @apiGroup Examples
    * @apiPermission any
    *
    * @apiDescription Example.
