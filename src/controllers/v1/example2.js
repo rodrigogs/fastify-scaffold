@@ -3,16 +3,16 @@ const debug = require('debug')('fastify-scaffold:controllers:example2');
 const IndexController = {
 
   /**
-   * @api {get} / Example
+   * @api {get} v1/example2/ Example 2
    * @apiVersion 1.0.0
-   * @apiName HealthCheck
-   * @apiGroup Health
+   * @apiName Example2
+   * @apiGroup Examples
    * @apiPermission any
    *
-   * @apiDescription Verify if the API server is running.
+   * @apiDescription Example 2.
    *
    * @apiExample Example usage:
-   * curl -i http://localhost:3000/
+   * curl -i http://localhost:3000/v1/example2
    */
   index: (request, reply) => {
     debug('executing index action');
@@ -21,16 +21,16 @@ const IndexController = {
   },
 
   /**
-   * @api {get} / Example
+   * @api {get} v1/example2/another Another example
    * @apiVersion 1.0.0
-   * @apiName HealthCheck
-   * @apiGroup Health
+   * @apiName Another example2
+   * @apiGroup Examples
    * @apiPermission any
    *
-   * @apiDescription Verify if the API server is running.
+   * @apiDescription Another example 2.
    *
    * @apiExample Example usage:
-   * curl -i http://localhost:3000/
+   * curl -i http://localhost:3000/v1/example2/another
    */
   another: (request, reply) => {
     debug('executing another action');
