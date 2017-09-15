@@ -1,6 +1,6 @@
 const chai = require('chai');
 const got = require('got');
-const server = require('../../../fixture/server');
+const server = require('../../../../fixture/server');
 
 chai.should();
 

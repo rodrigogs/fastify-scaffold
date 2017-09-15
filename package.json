@@ -12,7 +12,7 @@
   "scripts": {
     "start": "dotenv nodemon ./bin/www",
     "eslint": "eslint . --ext .js",
-    "test": "cross-env NODE_ENV=test mocha --ui tdd -t 5000 test/**/*.spec.js",
+    "test": "cross-env NODE_ENV=test mocha --ui tdd $(find test -name '*.spec.js')",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=html --reporter=lcov npm test",
     "docs": "apidoc -i src/controllers -o doc/"
   },
@@ -23,6 +23,7 @@
   "devDependencies": {
     "apidoc": "^0.17.6",
     "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "codeclimate-test-reporter": "^0.5.0",
     "cross-env": "^5.0.5",
     "dotenv-cli": "^1.4.0",

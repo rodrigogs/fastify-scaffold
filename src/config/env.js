@@ -1,13 +1,37 @@
-const debug = require('debug')('fastify-scaffold:config:env');
+const getEnv = name => process.env[name.toUpperCase()];
 
-debug('loading environment');
+class Env {
+  /**
+   * @return {string}
+   * @constructor
+   */
+  static get NODE_ENV() {
+    return getEnv('node_env') || 'development';
+  }
 
-const env = name => process.env[name.toUpperCase()];
+  /**
+   * @param {string} value
+   * @constructor
+   */
+  static set NODE_ENV(value) {
+    process.env.NODE_ENV = value;
+  }
 
-module.exports = {
+  /**
+   * @return {number}
+   * @constructor
+   */
+  static get PORT() {
+    return Number(getEnv('port')) || 3000;
+  }
 
-  NODE_ENV: env('node_env') || 'development',
+  /**
+   * @param {number} value
+   * @constructor
+   */
+  static set PORT(value) {
+    process.env.PORT = value;
+  }
+}
 
-  PORT: env('port') || 3000,
-
-};
+module.exports = Env;
