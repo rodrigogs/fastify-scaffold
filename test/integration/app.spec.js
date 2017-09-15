@@ -1,7 +1,6 @@
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
-const Env = require('../../src/config/env');
 const app = require('../../src/app');
 
 chai.use(chaiAsPromised);
