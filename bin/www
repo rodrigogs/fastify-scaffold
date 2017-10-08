@@ -7,5 +7,5 @@ app()
     console.log('Application running on port', instance.server.address().port);
   })
   .catch((err) => {
-    console.error('Application crached', err);
+    console.error('Application crashed', err);
   });
